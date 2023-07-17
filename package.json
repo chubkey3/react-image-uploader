@@ -1,5 +1,5 @@
 {
-  "name": "react-image-uploader",
+  "name": "@chubkey/react-image-uploader",
   "version": "1.0.0",
   "description": "React components and hooks for handling image uploading as well as storage.",
   "main": "dist/cjs.js",
