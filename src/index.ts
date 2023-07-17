@@ -1,3 +1,4 @@
 import Uploader from './components/Uploader/index'
+import nextUpload from './next/nextUpload';
 
-export default Uploader;
+export {nextUpload, Uploader};
