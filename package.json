@@ -1,0 +1,53 @@
+{
+  "name": "react-image-uploader",
+  "version": "1.0.0",
+  "description": "React components and hooks for handling image uploading as well as storage.",
+  "main": "dist/cjs.js",
+  "types": "dist/index.d.ts",
+  "unpkg": "dist/umd.min.js",
+  "module": "dist/esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chubkey3/react-image-uploader.git"
+  },
+  "keywords": [
+    "react",
+    "image",
+    "uploader",
+    "component",
+    "hook",
+    "typescript",
+    "s3",
+    "prisma"
+  ],
+  "author": "Jason Louie <jason.jw.louie@gmail.com> (https://github.com/chubkey3)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chubkey3/react-image-uploader/issues"
+  },
+  "homepage": "https://github.com/chubkey3/react-image-uploader#readme",
+  "peerDependencies": {
+    "react": "^16.8 || ^17 || ^18",
+    "react-dom": "^16.8 || ^17 || ^18",
+    "axios": "1.4.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/node": "^20.4.1",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "2.78.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "typescript": "^5.1.6"
+  }
+}
