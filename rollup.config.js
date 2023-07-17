@@ -15,7 +15,7 @@ const output = (format) => {
       'react-dom': 'ReactDOM',
       'react/jsx-runtime': 'ReactJSXRuntime',
       axios: 'axios'
-    },
+    }
   }
 
   return [
@@ -31,10 +31,10 @@ const output = (format) => {
 export default [
   {
     plugins: [typescript(), nodeResolve(), commonjs()],
-    external: ['react', 'react-dom', 'react/jsx-runtime', 'axios'],
+    external: ['react', 'react-dom', 'react/jsx-runtime', 'axios', 'multer', 'multer-s3', '@aws-sdk/client-s3', '@paralleldrive/cuid2'],
 
     input: 'src/index.ts',
-    output: [...output('cjs'), ...output('umd'), ...output('esm')],
+    output: [...output('cjs'), ...output('umd'), ...output('esm')]
   },
   /*
   {

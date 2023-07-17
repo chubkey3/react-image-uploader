@@ -10,7 +10,8 @@
     "dist"
   ],
   "scripts": {
-    "build": "rollup --config"
+    "build": "rollup --config",
+    "pack": "npm pack --pack-destination=\"./bin\""
   },
   "repository": {
     "type": "git",
@@ -33,14 +34,20 @@
   },
   "homepage": "https://github.com/chubkey3/react-image-uploader#readme",
   "peerDependencies": {
+    "@aws-sdk/client-s3": "^3.370.0",
+    "axios": "1.4.0",
+    "multer": "^1.4.5-lts.1",
+    "multer-s3": "^3.0.1",
     "react": "^16.8 || ^17 || ^18",
-    "react-dom": "^16.8 || ^17 || ^18",
-    "axios": "1.4.0"
+    "react-dom": "^16.8 || ^17 || ^18"
   },
   "devDependencies": {
+    "@paralleldrive/cuid2": "^2.2.1",
     "@rollup/plugin-commonjs": "^25.0.3",
     "@rollup/plugin-node-resolve": "^15.1.0",
     "@rollup/plugin-typescript": "^11.1.2",
+    "@types/multer": "^1.4.7",
+    "@types/multer-s3": "^3.0.0",
     "@types/node": "^20.4.1",
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.7",
@@ -49,5 +56,8 @@
     "rollup": "2.78.1",
     "rollup-plugin-terser": "^7.0.2",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@chubkey/react-image-uploader": "file:C:/Users/jason/test/Projects/react-image-uploader/chubkey-react-image-uploader-1.0.0.tgz"
   }
 }
