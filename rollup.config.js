@@ -9,7 +9,7 @@ const output = (format) => {
     file: `dist/${format}.js`,
     format,
     sourcemap: true,
-    name: 'reactGoogleMapsApi', // Only needed for UMD, but doesn't hurt the other outputs, so leaving it here for simplicity.
+    name: 'reactImageUploader',
     globals: {
       react: 'React',
       'react-dom': 'ReactDOM',
@@ -19,10 +19,7 @@ const output = (format) => {
   }
 
   return [
-    // We need the base output
     base,
-
-    // And also a minified version
     { ...base, file: `dist/${format}.min.js`, plugins: [terser()] },
   ]
 }
