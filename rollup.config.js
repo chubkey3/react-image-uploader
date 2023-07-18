@@ -14,7 +14,11 @@ const output = (format) => {
       react: 'React',
       'react-dom': 'ReactDOM',
       'react/jsx-runtime': 'ReactJSXRuntime',
-      axios: 'axios'
+      axios: 'axios',
+      multer: 'multer',
+      'multer-s3': 'multer-s3',
+      '@aws-sdk/client-s3': 'clientS3',
+      '@paralleldrive/cuid2': 'cuid2',      
     }
   }
 
